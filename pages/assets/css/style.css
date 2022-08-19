@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: auto;
+    height: 100%;
+    background-color: #0c192c;
+    filter: contrast(200%) brightness(150%);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.buble {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: -1;
+}
+
+.buble span {
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #4fc3dc22, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    animation: bubleanim 15s linear infinite alternate;
+    animation-duration: calc(90s / var(--i));
+}
+
+.buble span:nth-child(even) {
+    background: #ff2d75;
+    box-shadow: 0 0 10px #ff2d7522, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+}
+
+@keyframes bubleanim {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}

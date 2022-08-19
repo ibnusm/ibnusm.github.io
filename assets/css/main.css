@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+/*font-family: 'Noto Sans Mono', monospace;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background-image: url('../img/kali-background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.terminal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Noto Sans Mono", monospace;
+  width: 400px;
+  height: 250px;
+  background: rgba(36,38,46,1);
+  border: 1px solid #eaeaea;
+}
+
+.terminal .root {
+  position: absolute;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #f00;
+}
+
+.terminal #app {
+  position: absolute;
+  top: 11.9%;
+  left: 9%;
+  font-size: 10px;
+  color: #fff;
+  padding: 5px;
+}
+
+.headerTerm {
+  width: 399px;
+  height: 15px;
+  background: #eaeaea;
+}
+
+.headerTerm img {
+  width: 15px;
+  height: 15px;
+  padding-bottom: 3.5px;
+  padding-left: 3px;
+}
+
+.headerTerm span {
+  position: absolute;
+  padding: 3px;
+  font-family: Monospace;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 720px) {
+  .terminal {
+    width: 600px;
+    height: 350px;
+  }
+  .terminal .root {
+    font-size: 15px;
+  }
+  .terminal #app {
+    font-size: 15px;
+  }
+  .headerTerm {
+    width: 599px;
+    height: 20px;
+  }
+  .headerTerm img {
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+  }
+  .headerTerm span {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .terminal {
+    width: 800px;
+    height: 450px;
+  }
+  .terminal .root {
+    font-size: 20px;
+  }
+  .terminal #app {
+    font-size: 20px;
+  }
+  .headerTerm {
+    width: 799px;
+    height: 25px;
+  }
+  .headerTerm img {
+    width: 25px;
+    height: 25px;
+    padding-top: 2.5px;
+  }
+  .headerTerm span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .terminal {
+    width: 280px;
+    height: 150px;
+  }
+  .terminal .root {
+    font-size: 6.5px;
+    padding: 2px;
+  }
+  .terminal #app {
+    font-size: 6.5px;
+    padding: 2px;
+  }
+  .headerTerm {
+    width: 279px;
+    height: 8.5px;
+  }
+  .headerTerm img {
+    width: 8.5px;
+    height: 8.5px;
+    padding: 1.5px;
+    position: absolute;
+  }
+  .headerTerm span {
+    font-size: 6px;
+    padding: 1.5px 0 0 8px;
+  }
+}
